@@ -1,0 +1,37 @@
+@import url("../style.css");
+
+a.index-page {
+    color: brown !important;
+}
+
+.main-content > * {
+    display: inline;
+    margin: 0px 100px;
+}
+
+table {
+    min-width: 400px;
+    border-spacing: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.action-button {
+    width: 200px;
+    height: 60px;
+
+    background-color: transparent;
+}
+
+.reset-button:hover {
+    background-color: maroon;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: aquamarine;
+}
+
+img {
+    width: 600px;
+}

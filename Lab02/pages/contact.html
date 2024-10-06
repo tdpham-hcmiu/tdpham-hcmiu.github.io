@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="page.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="content-center">
+            <a href="../index.html">Home</a> <span id="seperator"> | </span>
+            <a href="team.html">My team</a> <span id="seperator"> | </span>
+            <a href="projects.html">Projects</a> <span id="seperator"> | </span>
+            <a href="socials.html">Socials</a> <span id="seperator"> | </span>
+            <span id="nav-active">Contact</span>
+        </nav>
+
+        <hr>
+
+        <header>
+            <div class="content-center" id="introductory">
+                <h1>Contact form</h1>
+            </div>
+        </header>
+
+        <section class="content-center contact-form">
+            <form method="post" action="">
+                <table>
+                    <tr>
+                        <td>Your name:</td>
+                        <td><input type="text" name="sender" size="90"></td>
+                    </tr>
+                    <tr>
+                        <td>Your gender:</td>
+                        <td>
+                            <input type="radio" name="gender" value="male"><label>Male</label>
+                            <input type="radio" name="gender" value="female"><label>Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Your email:</td>
+                        <td><input type="text" name="email" size="90"></td>
+                    </tr>
+                    <tr>
+                        <td>Title:</td>
+                        <td><input type="text" name="title" size="90"></td>
+                    </tr>
+                    <tr>
+                        <td>Content:</td>
+                        <td><textarea name="contact-content" rows="20" cols="90"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="urgent"></td>
+                        <td>Check this box if this message is urgent.</td>
+                    </tr>
+                    <tr>
+                        <td><input class="action-button reset-button" type="reset" name="reset"></td>
+                        <td><input class="action-button submit-button" type="submit" name="submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </body>
+</html>
