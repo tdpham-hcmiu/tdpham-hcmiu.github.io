@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <div class="form-container">
+        <h1>Register for an account</h1>
+
+        <div class="errors">
+        </div>
+
+        <form name="register" onload="hydrate()" onchange="validate()" onfocus="validate()" onsubmit="submit()" oninput="validate()">
+            <table>
+                <tr>
+                    <td><label>E-Mail</label></td>
+                    <td><input name="email" type="text" autofocus onfocus="validate()"><span class="required">*</span></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile Phone</label></td>
+                    <td><input name="phone" type="text" onfocus="validate()"><span class="required">*</span></td>
+                </tr>
+                <tr>
+                    <td><label>Country</label></td>
+                    <td>
+                        <select name="country">
+                            <option name="None" value="None">Select a country</option>
+                            <option name="Vietnam" value="VN">Vietnam</option>
+                            <option name="USA" value="US">United States of America</option>
+                        </select>
+                        <span class="required">    *</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Contact me by</label></td>
+                    <td>
+                        <input type="radio" name="contact-method" value="text" checked><label>Text</label>
+                        <input type="radio" name="contact-method" value="email"><label>Email</label>
+                        <input type="radio" name="contact-method" value="no"><label>Don't contact me</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Terms of Service</label></td>
+                    <td>
+                        <input type="checkbox" name="tos" value="tos" onchange="validate()"><label>I accept.</label><span class="required">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

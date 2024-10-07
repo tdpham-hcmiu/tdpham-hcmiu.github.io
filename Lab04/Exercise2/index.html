@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <button id="cd-btn" onclick="startClock()">Click to start countdown (10s).</button>
+        <hr/>
+        <div id="questions">
+            <h4>These are test questions.</h4>
+            <table>
+                <tr>
+                    <td><label>Q1: How many people in your class?</label></td>
+                    <td><input name="headcount" type="text" autofocus>
+                </tr>
+                <tr>
+                    <td><label>Q2: How do you feel now?</label></td>
+                    <td>
+                        <input type="radio" name="feel" value="nice"><label>Good</label>
+                        <input type="radio" name="feel" value="poop"><label>Bad</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="time-ended">
+            <h4>Time is up!</h4>
+            <button id="submit-btn" onclick="">Click to submit.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
