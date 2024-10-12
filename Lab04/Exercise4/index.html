@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Message box</title>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h4>Write your Message</h4>
+    <div id="container">
+        <h4>Write your Message</h4>
 
-    <div id="content">
-        <textarea 
-            placeholder="Start typing..." 
-            id="textarea"
-            cols="50"
-            rows="5"
-            autofocus
-            maxlength="250"
-            onfocus="checkLength()"
-            oninput="checkLength()"
-        ></textarea>
-        <span id="word-count"></span>
+        <div id="content">
+            <textarea 
+                placeholder="Start typing..." 
+                id="textarea"
+                cols="50"
+                rows="5"
+                autofocus
+                maxlength="250"
+                onfocus="checkLength()"
+                oninput="checkLength()"
+            ></textarea>
+            <span id="word-count"></span>
+        </div>    
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>

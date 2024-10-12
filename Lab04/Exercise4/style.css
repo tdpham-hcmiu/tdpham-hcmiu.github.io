@@ -11,22 +11,25 @@ textarea {
     border: none;
 }
 
-#content {
+#container {
+    margin: auto;
+    width: 38%;
+}
+
+#container > * {
     padding: 10px;
+}
+
+#content {
     border: 5px solid black;
     border-radius: 10px;
 }
 
-#content-max {
-    padding: 10px;
-    border: 5px solid red;
-    border-radius: 10px;
+.max {
+    border: 5px solid red !important;
+    border-radius: 10px !important;
 }
 
-#content-max > textarea {
-    color: red;
-}
-
-#word-count-max {
-    color: red;
+.max > * {
+    color: red !important;
 }

@@ -5,15 +5,10 @@ function checkLength() {
     let preparedText = `${input.value.length}/250`;
 
     if (input.value.length >= 250) {
-        document.getElementById("content").id = "content-max";
+        document.getElementById("content").classList.add("max");
         elem.innerHTML = `<span style="color: red;">${preparedText}</span>`;
     } else {
-        try {
-            document.getElementById("content-max").id = "content";
-        } catch {
-            // silent it.
-        }
-
+        document.getElementById("content").classList.remove("max");
         elem.innerText = preparedText;
     }
 }
