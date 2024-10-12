@@ -2,7 +2,7 @@ document.getElementById("questions").style.display = "none";
 document.getElementById("time-ended").style.display = "none";
 
 function startClock() {
-    var countdownTime = 10;
+    var countdownTime = 60;
     var display = document.getElementById("cd-btn");
 
     document.getElementById("questions").style.display = "block";
