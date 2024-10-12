@@ -1,0 +1,17 @@
+* {
+    font-family: sans-serif;
+}
+
+#clock > h1 {
+    color: #6495ED;
+}
+
+#clock {
+    border: 1px solid black;
+    border-radius: 10px;
+
+    margin: auto;
+    width: 50%;
+
+    text-align: center;
+}
