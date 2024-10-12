@@ -11,31 +11,8 @@ setInterval(() => {
     var timeString = `${H}:${M}:${S} ${AM_PM}`;
     document.getElementById("time").innerText = timeString;
 
-    var days = [
-        "Sun", 
-        "Mon", 
-        "Tue", 
-        "Wed",
-        "Thu",
-        "Fri",
-        "Sat"
-    ];
-
-    var months = [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec"
-    ]
-
+    var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
     var dayName = days[currentTime.getDay()];
     var monthName = months[currentTime.getMonth()];
